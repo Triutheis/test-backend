@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <a href="index.html">Quay lại trang chính</a>
+            <a href="#" id="logout-link">Đăng xuất</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="admin-users">
+            <h2>Quản lý người dùng</h2>
+            <div id="user-list"></div>
+        </section>
+
+        <section id="admin-products">
+            <h2>Quản lý sản phẩm</h2>
+            <div id="product-form">
+                <input type="text" id="product-name" placeholder="Tên sản phẩm">
+                <input type="number" id="product-price" placeholder="Giá (VNĐ)">
+                <input type="text" id="product-image" placeholder="URL hình ảnh">
+                <button onclick="addProduct()">Thêm sản phẩm</button>
+            </div>
+            <div id="admin-product-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Shop Online. All rights reserved.</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

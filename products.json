@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": null,
+    "price": null,
+    "image": null
+  },
+  {
+    "id": 2,
+    "name": "Quần jeans rách",
+    "price": 300000,
+    "image": "https://via.placeholder.com/150/0000ff/ffffff?text=Quan+Jeans"
+  },
+  {
+    "id": 3,
+    "name": "Giày thể thao đen",
+    "price": 500000,
+    "image": "https://via.placeholder.com/150/000000/ffffff?text=Giay+The+Thao"
+  },
+  {
+    "id": 4,
+    "name": "Túi xách thời trang",
+    "price": 250000,
+    "image": "https://via.placeholder.com/150/ff0000/ffffff?text=Tui+Xach"
+  },
+  {
+    "id": 5,
+    "name": "Mũ lưỡi trai",
+    "price": 100000,
+    "image": "https://via.placeholder.com/150/00ff00/ffffff?text=Mu+Luoi+Trai"
+  }
+]

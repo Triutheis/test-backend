@@ -5,12 +5,12 @@ const cors = require('cors');
 const app = express();
 
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static(__dirname)); // Phục vụ file tĩnh từ thư mục gốc
 app.use(cors());
 
 // Đường dẫn tới file JSON
-const productsFile = path.join(__dirname, 'public', 'products.json');
-const usersFile = path.join(__dirname, 'public', 'users.json');
+const productsFile = path.join(__dirname, 'products.json');
+const usersFile = path.join(__dirname, 'users.json');
 
 // Hàm khởi tạo file nếu không tồn tại hoặc trống
 function initializeFile(filePath, initialData) {
