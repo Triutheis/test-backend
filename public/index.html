@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Shop Online</h1>
+        <nav>
+            <a href="#home">Trang chủ</a>
+            <a href="#products">Sản phẩm</a>
+            <a href="#">Giỏ hàng (<span id="cart-count">0</span>)</a>
+            <a href="#" id="login-link">Đăng nhập</a>
+            <a href="#" id="register-link">Đăng ký</a>
+            <a href="dashboard.html" id="dashboard-link" style="display: none;">Dashboard</a>
+            <a href="#" id="logout-link" style="display: none;">Đăng xuất</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Chào mừng đến với Shop Online</h2>
+                <p>Mua sắm dễ dàng, giá cả hợp lý, chất lượng đảm bảo!</p>
+                <a href="#products" class="btn">Khám phá ngay</a>
+            </div>
+        </section>
+
+        <section id="auth" class="auth-section" style="display: none;">
+            <div id="login-form">
+                <h2>Đăng nhập</h2>
+                <input type="text" id="login-username" placeholder="Tên người dùng">
+                <input type="password" id="login-password" placeholder="Mật khẩu">
+                <button onclick="login()">Đăng nhập</button>
+            </div>
+            <div id="register-form" style="display: none;">
+                <h2>Đăng ký</h2>
+                <input type="text" id="register-username" placeholder="Tên người dùng">
+                <input type="password" id="register-password" placeholder="Mật khẩu">
+                <button onclick="register()">Đăng ký</button>
+            </div>
+        </section>
+
+        <section id="products">
+            <h2>Sản phẩm nổi bật</h2>
+            <div id="loading" class="loading">Đang tải sản phẩm...</div>
+            <div id="product-list" class="product-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Shop Online. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
